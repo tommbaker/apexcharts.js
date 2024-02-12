@@ -80,6 +80,8 @@ export default class TreemapHelpers {
   determineColor(chartType, i, j) {
     const w = this.w
 
+    console.log(i, j, w.globals.series);
+
     let val = w.globals.series[i][j]
 
     let chartOpts = w.config.plotOptions[chartType]
